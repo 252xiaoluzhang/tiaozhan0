@@ -1,0 +1,598 @@
+@font-face{
+	font-family:'bebasneue';
+	src:url(./fonts/bebasneue-webfont.eot)
+	,url(./fonts/bebasneue-webfont.svg)
+	,url(./fonts/bebasneue-webfont.ttf)
+	,url(./fonts/bebasneue-webfont.woff)
+	,url(./fonts/bebasneue-webfont.woff2)
+	,url(./fonts/BebasNeue.otf);
+}
+@font-face{
+	font-family:'ubuntu';
+	src:url(./fonts/ubuntu-r-webfont.eot)
+	,url(./fonts/ubuntu-r-webfont.svg)
+	,url(./fonts/ubuntu-r-webfont.ttf)
+	,url(./fonts/ubuntu-r-webfont.woff)
+	,url(./fonts/ubuntu-r-webfont.woff2);
+}
+@font-face{
+	font-family:'breeserif';
+	src:url(./fonts/breeserif-regular-webfont.eot)
+	,url(./fonts/breeserif-regular-webfont.otf)
+	,url(./fonts/breeserif-regular-webfont.svg)
+	,url(./fonts/breeserif-regular-webfont.ttf)
+	,url(./fonts/breeserif-regular-webfont.woff)
+	,url(./fonts/breeserif-regular-webfont.woff2);
+}
+@font-face{
+	font-family:'bebas';
+	src:url(./fonts/bebas-webfont.eot)
+	,url(./fonts/bebas-webfont.svg)
+	,url(./fonts/bebas-webfont.ttf)
+	,url(./fonts/bebas-webfont.woff)
+	,url(./fonts/bebas-webfont.woff2);
+}
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+body{
+	background:#f4f4f4;
+	background-size:100%;
+}
+.center{
+	width:1280px;
+	margin:0 auto;
+	height:100%;
+}
+.top{                                   
+	background-color:rgb(255,255,255);
+	width:100%;
+	height:81px;
+}
+.top .logo{
+	float:left;
+	font-size:20px;
+	font-family:'breeserif',"微软雅黑",Arial;
+	color:rgb(96,96,96);
+	padding-left:186px;
+	padding-top:32px;
+	font-weight:lighter;
+}
+.top .logo img{
+	margin-right:4px;
+}
+.top ul{
+	float:left;
+	height:100%;
+	margin-left:168px;
+}
+.top ul li{
+	float:left;
+	height:100%;
+}
+.top li a{
+	color:rgb(81,88,98);
+	font-size:14px;
+	font-family:'ubuntu',"微软雅黑",Arial;
+	display:block;
+	padding:0 25px;
+	height:100%;
+	line-height:81px;
+}
+.top li a:hover{
+	background-color:rgb(18,163,214);
+	color:rgb(197,244,255);
+}
+.top .current a{
+	padding:0 18px;
+	background-color:rgb(18,163,214);
+	background-image:url(./images/selected.png);
+	background-repeat:no-repeat;
+	background-position:0 52px;
+	color:rgb(197,244,255);
+}
+.top .blog{
+	float:left;
+	margin-left:8px;
+	margin-top:28px;
+	background:url(./images/nav-2.png) center no-repeat;
+	height:25px;
+	width:66px;
+	line-height:25px;
+	display:block;
+	float:left;
+	text-indent:-1000em;
+}
+.top .search{
+	float:left;
+	font-size:12px;
+	font-family:'ubuntu',"微软雅黑",Arial;
+	color:rgb(81,88,98);
+	margin-left:90px;
+	margin-top:20px;
+	background:url(./images/nav-3.png) right no-repeat;
+	height:36px;
+	width:80px;
+	line-height:36px;
+	display:block;
+	float:left;
+}
+.slider{
+	position:relative;
+	width:100%;
+	height:489px;
+	background:#2e3e4f center no-repeat;
+	text-align:center;
+	clear:both;
+	
+}
+.slider h1,
+.slider p{
+	color:rgb(204,206,206);
+	text-align:center;
+}
+.slider .center .learnmore{
+	background:url(./images/learnmore.png) center no-repeat;
+	height:51px;
+	width:243px;
+	line-height:51px;
+	display:block;
+	text-align: center;
+	margin:44px auto 0;
+	text-indent:-1000em;
+}
+.slider h1{
+	font-size:60px;
+	padding-top:100px;
+	width:100%;
+	font-family:'bebasneue',"黑体",Arial;
+	font-weight:lighter;
+}
+.slider p{
+	font-size:14px;
+	margin-top:10px;
+	width:100%;
+	font-family:'ubuntu',"微软雅黑",Arial;
+}
+.slider .center{
+	position:relative;
+	text-align:center;
+	overflow:hidden;
+}
+.slider .center ul{
+	position:absolute;
+	left:0;
+	top:0;
+}
+.slider .center .imgList1{
+	height:100%;
+}
+.slider .center .imgList1 li{
+	float:left;
+}
+.slider .center .imgList2{
+	width:100%;
+	top:-1956px;
+	
+}
+.slider .center .imgList2 li{
+	display:block;
+	height:489px;
+}
+.dots{
+	position: absolute;
+	right: 182px;
+	bottom: 29px;
+}
+.slider .dots a{
+	background:url(./images/dot.png) center no-repeat;
+	height:17px;
+	width:17px;
+	display:block;
+	float:left;
+	margin-right:4px;
+}
+.slider .dots .selecteddot{
+	background:url(./images/selecteddot.png) center no-repeat;
+}
+.service{
+	position:relative;
+	background-size:100%;
+	width:100%;
+	height:308px;
+	background-color:rgb(244,244,244);
+	clear:both;
+}
+.service .center{
+	position:relative;
+	width:920px;
+}
+#ourservices{
+	position:absolute;
+	top:-17px;
+	left:387px;
+	width:146px;
+	height:35px;
+	background:url(./images/ourservices.png) center no-repeat;
+	text-indent:-1000em;
+}
+.service1{
+	background:url(./images/service1.png) top no-repeat;
+	padding-top:118px;
+	float:left;
+	margin-top:50px;
+	width:175px;
+	text-align:center;
+}
+.service2{
+	background:url(./images/service2.png) top no-repeat;
+	padding-top:118px;
+	margin-left:74px;
+	float:left;
+	margin-top:50px;
+	width:175px;
+	text-align:center;
+}
+.service3{
+	background:url(./images/service3.png) top no-repeat;
+	padding-top:118px;
+	margin-right:74px;
+	float:right;
+	margin-top:50px;
+	width:175px;
+	text-align:center;
+}
+.service4{
+	background:url(./images/service4.png) top no-repeat;
+	padding-top:118px;
+	float:right;
+	margin-top:50px;
+	width:175px;
+	text-align:center;
+}
+.service h2{
+	font-size:17px;
+	font-family:'breeserif',"微软雅黑",Arial;
+	margin-top:20px;
+	margin-bottom:7px;
+	color:rgb(81,88,98);
+	font-weight:lighter;
+}
+.service p{
+	font-size:12px;
+	color:rgb(81,88,98);
+	font-family:'ubuntu',"微软雅黑",Arial;
+}
+.service p a{
+	color:rgb(62,157,209);
+}
+.portfolio{
+	width:100%;
+	height:518px;
+	background-color:rgb(46,62,79);
+	background-size:100%;
+	clear:both;
+}
+.portfolio .OPA{
+	width:920px;
+	height:100%;
+	margin:0 auto;
+}
+.portfolio .OPA .firstContent{
+	padding-top:55px;
+}
+.portfolio .OPA h1{
+	font-size:30px;
+	line-height:30px;
+	color:rgb(249,133,97);
+	text-align:left;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
+	float:left;
+}
+.portfolio .OPA a{
+	background:url(./images/moreworks.png) center no-repeat;
+	height:32px;
+	width:90px;
+	display:block;
+	float:right;
+	margin-right:4px;
+	line-height:32px;
+	display:block;
+	text-align: center;
+	text-indent:-1000em;
+}
+.portfolio .port1{
+	width:284px;
+	float:left;
+	clear:both;
+	margin-top: 65px;
+	margin-right: 35px;
+}
+.portfolio .port2{
+	width:284px;
+	float:left;
+	margin-top: 65px;
+}
+.portfolio .port3{
+	width:284px;
+	float:right;
+	margin-top: 65px;
+}
+.portfolio h2{
+	font-size:17px;
+	color:rgb(249,133,97);
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
+	margin-top:14px;
+}
+.portfolio p{
+	font-size:12px;
+	color:rgb(188,188,188);
+	font-family:'ubuntu',"微软雅黑",Arial;
+	margin-top:4px;
+}
+.offer{
+	width:100%;
+	height:320px;
+	background-color:rgb(244,244,244);
+	background-size:100%;
+	clear:both;
+}
+.offer .center{
+	width:920px;
+	height:100%;
+	margin:0 auto;
+	text-align:center;
+	float:none;
+	clear:both;
+}
+.offer .center div{
+	width:206px;
+	float:left;
+	margin-right:32px;
+}
+.offer .center .offer4{
+	float:right;
+	margin:0;
+}
+.offer .center .offer4 p{
+	padding:4px 0 12px 0;
+}
+.offer .center .detail1,
+.offer .center .detail2{
+	display:block;
+	float:right;
+	line-height:24px;
+	display:block;
+	text-align: center;
+	text-indent:-1000em;
+}
+.offer .center .detail1{
+	background:url(./images/details1.png) center no-repeat;
+	height:24px;
+	width:55px;
+}
+.offer .center .detail2{
+	background:url(./images/details2.png) center no-repeat;
+	height:28px;
+	width:56px;
+}
+.offer h1{
+	font-size:40px;
+	color:rgb(33,144,193);
+	padding-top:30px;
+	font-family:'bebasneue',Arial;
+	font-weight:lighter;
+}
+.offer .firstP{
+	font-size:12px;
+	color:rgb(81,88,98);
+	display:block;
+	width:730px;
+	margin:13px auto 0;
+	padding:0;
+	font-family:'ubuntu',"微软雅黑",Arial;
+	text-align:center;
+}
+.offer h2{
+	font-size:17px;
+	color:rgb(43,153,204);
+	margin-top:34px;
+	text-align:left;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
+}
+.offer p{
+	font-size:12px;
+	padding:4px 0 12px 0;
+	color:rgb(81,88,98);
+	font-family:'ubuntu',"微软雅黑",Arial;
+	text-align:left;
+}
+.offer .center div span a{
+	color:rgb(43,153,204);
+	font-size:14px;
+	font-family:'breeserif';
+}
+.testimonials{
+	width:100%;
+	height:336px;
+	background-color:rgb(244,244,244);
+	background-position:100%;
+	clear:both;
+}
+.testimonials .center{
+	border-top:1px solid rgb(217,217,217);
+	height:100%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	width:1024px;
+	text-align:center;
+	position:relative;
+}
+.testimonials h1{
+	font-size:27px;
+	color:rgb(33,144,193);
+	padding-top:34px;
+	font-family:'bebas',"微软雅黑",Arial;
+	font-weight:lighter;
+}
+.testimonials p{
+	font-size:25px;
+	color:rgb(81,88,98);
+	margin-top:24px;
+	font-family:'breeserif',"微软雅黑",Arial;
+	font-weight:lighter;
+}
+.testimonials h4{
+	font-size:14px;
+	color:rgb(249,133,97);
+	font-family:'ubuntu',"微软雅黑",Arial;
+	margin-top:46px;
+	font-weight:lighter;
+}
+.testimonials .threeIMG{
+	height:89px;
+	position:absolute;
+	bottom:0;
+	left:405px;
+}
+.footer{
+	min-height:337px;
+	width:100%;
+	background-color:rgb(46,62,79);
+	background-size:100%;
+	clear:both;
+	overflow:hidden;
+}
+.footer .content{
+	width:920px;
+	height:100%;
+	margin:0 auto;
+	padding:0;
+}
+.footer .content .footer1{
+	float:left;
+	width:222px;
+	padding:0;
+	margin-top:38px;
+	margin-right:19px;
+}
+.footer .content .footer2{
+	float:left;
+	width:254px;
+	padding:0;
+	margin-top:38px;
+	margin-right:22px;
+}
+.footer2 .footer22 img{
+	float:right;
+}
+.footer .content .footer3{
+	float:left;
+	width:222px;
+	padding:0;
+	margin-top:38px;
+	margin-right:13px;
+}
+.footer .content .footer4{
+	float:right;
+	width:158px;
+	padding:0;
+	margin-top:38px;
+}
+.footer3 img,
+.footer4 img{
+	float:left;
+	margin-right:11px;
+}
+.footer h2{
+	font-size:30px;
+	color:rgb(249,133,97);
+	font-family:'bebasneue',"Times New Roman",sans-serif;
+	font-weight:lighter;
+}
+.footer p{
+	font-size:12px;
+	color:rgb(163,175,178);
+	line-height:20px;
+	font-family:'ubuntu',"微软雅黑",Arial;
+}
+.footer .footer4 p{
+	font-size:13px;
+}
+.footer a{
+	font-size:12px;
+	color:rgb(34,140,188);
+}
+.footer3 div,
+.footer4 div{
+	clear:both;
+}
+.footer .footer2 .footer22 label{
+	font-size:13px;
+	color:rgb(34,140,188);
+	font-family:'ubuntu';
+}
+.footer .footer2 .footer22 input{
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+	border: 0;
+	outline:0;
+	width:100%;
+	height:28px;
+	margin:12px 0;
+}
+.footer .footer2 .footer22 input.signup{
+	border-radius: 3px;
+	-webkit-border-radius:3px;
+    -moz-border-radius:3px;
+	border: 0;
+	outline:0;
+	width:77px;
+	height:27px;
+	color:#ffffff;
+	background-color: #2190c1;
+	cursor:pointer;
+	font-size:13px;
+	text-align:center;
+	float:right;
+	display:block;
+	margin:0;
+}
+.footer11,
+.footer12,
+.footer21,
+.footer31,
+.footer32{
+	border-bottom:1px solid rgb(85,95,112);
+}
+.footer div{
+	padding:9px 0;
+}
+.footer43 img{
+	margin-top:8px;
+}
+.footer .footer4 div{
+	padding-left:44px;
+}
+.footer .footer4 .footer41{
+	background:url(./images/tel.png) left no-repeat;
+}
+.footer .footer4 .footer42{
+	background:url(./images/phone.png) left no-repeat;
+}
+.footer .footer4 .footer43{
+	background:url(./images/mail.png) left no-repeat;
+}
